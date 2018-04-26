@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RoomReservationSystem.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,13 +11,16 @@ namespace RoomReservationSystem.Controllers
     {
         public ActionResult Index()
         {
+            using (AzureConnection db = new AzureConnection())
+            {
+                ViewBag.Rooms = db.Room.ToList();
+            }
             return View();
         }
 
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
