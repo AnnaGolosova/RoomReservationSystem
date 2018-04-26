@@ -12,18 +12,13 @@ namespace RoomReservationSystem.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class FLOOR
+    public partial class AspNetUserClaims
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public FLOOR()
-        {
-            this.Room = new HashSet<Room>();
-        }
-    
         public int Id { get; set; }
-        public int Number { get; set; }
+        public string UserId { get; set; }
+        public string ClaimType { get; set; }
+        public string ClaimValue { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Room> Room { get; set; }
+        public virtual AspNetUsers AspNetUsers { get; set; }
     }
 }

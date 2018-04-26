@@ -6,7 +6,29 @@
     <edmx:Diagrams>
       <Diagram DiagramId="853dc24bae0d4fb4a4f0f7b7baf50bfa" Name="Diagram1">
         <EntityTypeShape EntityType="Model.FLOOR" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.Room" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Room" Width="1.5" PointX="2.625" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK__Room__IdFloor__5BE2A6F2" />
+        <EntityTypeShape EntityType="Model.AspNetRoles" Width="1.5" PointX="9.5" PointY="5.25" />
+        <EntityTypeShape EntityType="Model.AspNetUserClaims" Width="1.5" PointX="9.375" PointY="2.625" />
+        <EntityTypeShape EntityType="Model.AspNetUserLogins" Width="1.5" PointX="4.5" PointY="4.875" />
+        <EntityTypeShape EntityType="Model.AspNetUsers" Width="1.5" PointX="6.875" PointY="3.125" />
+        <EntityTypeShape EntityType="Model.Event_Type" Width="1.5" PointX="2.75" PointY="3.125" />
+        <EntityTypeShape EntityType="Model.Faculty" Width="1.5" PointX="9.25" PointY="0.625" />
+        <EntityTypeShape EntityType="Model.Group" Width="1.5" PointX="6.875" PointY="0.5" />
+        <AssociationConnector Association="Model.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="Model.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="Model.FK__Group__IdFaculty__76969D2E" />
+        <AssociationConnector Association="Model.AspNetUserRoles" />
+        <AssociationConnector Association="Model.FK__AspNetUse__IdGro__797309D9" />
+        <EntityTypeShape EntityType="Model.Equipment" Width="1.5" PointX="0.75" PointY="3.125" />
+        <EntityTypeShape EntityType="Model.Inventory" Width="1.5" PointX="0.625" PointY="5.375" />
+        <AssociationConnector Association="Model.FK__Equipment__IdInv__02FC7413" />
+        <AssociationConnector Association="Model.FK__Equipment__IdRoo__02084FDA" />
+        <EntityTypeShape EntityType="Model.Event" Width="1.5" PointX="4.875" PointY="1.25" />
+        <AssociationConnector Association="Model.FK__Event__IdUser__0E6E26BF" />
+        <AssociationConnector Association="Model.FK__Event__IdGroup__114A936A" />
+        <AssociationConnector Association="Model.FK__Event__IdRoom__0F624AF8" />
+        <AssociationConnector Association="Model.FK__Event__IdType__10566F31" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

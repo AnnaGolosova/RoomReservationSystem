@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Search";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<form>
+    <div class="Inputizacia">
+        <h1>Параметры поиска аудиторий</h1>
+
+        <h3>Номер корпуса</h3>
+        <input type="text" name="inputCorpus">
+
+        <h3>Этаж</h3>
+        <input type="text" name="inputFloor">
+
+        <h3>Аудитория</h3>
+        <input type="text" name="inputRoom">
+
+        <h3>Дата</h3>
+        <input type="text" name="inputDate">
+
+        <h3>Время</h3>
+        <select name="chooseTime">
+            <option>8:20/9:45</option>
+            <option>10:10/11:45</option>
+            <option>12:05/13.40</option>
+            <option>14:10/15:45</option>
+            <option>15:55/17:30</option>
+            <option>17:40/19:15</option>
+        </select>
+        <br><br>
+        Проектор
+        <input type="checkbox" name="chooseProjector">
+        Розетки
+        <input type="checkbox" name="chooseRozetki">
+        <br><br>
+        <button name="klikOnPoisk" style="margin: 10px 0 0 100px;">✔Отправить</button>
+    </div>
+</form>
+

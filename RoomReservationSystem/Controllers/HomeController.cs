@@ -11,10 +11,7 @@ namespace RoomReservationSystem.Controllers
     {
         public ActionResult Index()
         {
-            using (AzureConnection db = new AzureConnection())
-            {
-                ViewBag.Rooms = db.Room.ToList();
-            }
+            ViewBag.Rooms = DBRepository.GetRoom();
             return View();
         }
 
@@ -28,6 +25,16 @@ namespace RoomReservationSystem.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+
+        public ActionResult Search()
+        {
+            return View();
+        }
+
+        public ActionResult RoomHistory()
+        {
             return View();
         }
     }

@@ -2,28 +2,27 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
-
-<div class="row">
-    <table>
-        <tr>
-            <td>
-                IdRoom
-            </td>
-            <td>
-                Numbet
-            </td>
-        </tr>
-        @foreach (RoomReservationSystem.Models.Room room in ViewBag.Rooms)
-        {
-            <tr>
-                <td>@room.IdRoom</td>
-                <td>@room.Numbet</td>
-            </tr>
-        }
-    </table>
-</div>
+<h3>Таблица занятости кабинетов</h3>
+<p>Сегодня</p>
+<table class="tb1" border="1">
+    <caption></caption>
+    <tr></tr>
+    <tr><td style="background-color: green">8:20</td><td style="background-color: green">Свободно</td></tr>
+    <tr><td style="background-color: green">10:10</td><td style="background-color: green">Свободно</td></tr>
+    <tr><td>12:05</td><td>Михайлов П.</td></tr>
+    <tr><td style="background-color: green">14:10</td><td style="background-color: green">Свободно</td></tr>
+    <tr><td>15:55</td><td>Белова К.</td></tr>
+    <tr><td style="background-color: green">XX:XX</td><td style="background-color: green">Свободно</td></tr>
+</table>
+<br>
+<p>27.04.2018</p>
+<table class="tb2" border="1">
+    <caption></caption>
+    <tr></tr>
+    <tr><td>8:20</td><td>Белова К.</td></tr>
+    <tr><td>10:10</td><td>Белова К.</td></tr>
+    <tr><td>12:05</td><td>Михайлов П.</td></tr>
+    <tr><td style="background-color: green">14:10</td><td style="background-color: green">Свободно</td></tr>
+    <tr><td style="background-color: green">15:55</td><td style="background-color: green">Свободно</td></tr>
+    <tr><td style="background-color: green">XX:XX</td><td style="background-color: green">Свободно</td></tr>
+</table> 

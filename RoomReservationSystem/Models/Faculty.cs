@@ -12,23 +12,18 @@ namespace RoomReservationSystem.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Room
+    public partial class Faculty
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Room()
+        public Faculty()
         {
-            this.Equipment = new HashSet<Equipment>();
-            this.Event = new HashSet<Event>();
+            this.Group = new HashSet<Group>();
         }
     
         public int Id { get; set; }
-        public int IdFloor { get; set; }
-        public int Number { get; set; }
+        public string Title { get; set; }
     
-        public virtual FLOOR FLOOR { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Equipment> Equipment { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Event> Event { get; set; }
+        public virtual ICollection<Group> Group { get; set; }
     }
 }
